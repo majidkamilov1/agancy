@@ -68,3 +68,51 @@ body {
 .text-min {
   font-weight: 200;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+  transition: 0.3s;
+}
+
+@media (max-width: 1440px) {
+  .my-grid-areas {
+    display: grid;
+    grid-template-areas:
+      "my-grid-areas-1 my-grid-areas-3"
+      "my-grid-areas-2 my-grid-areas-3"
+      "my-grid-areas-4 my-grid-areas-3";
+  }
+}
+
+@media (max-width: 1440px) {
+  .my-grid-areas {
+    display: flex;
+  }
+}
+
+.my-grid-areas-1 {
+  grid-area: my-grid-areas-1;
+}
+
+.my-grid-areas-2 {
+  grid-area: my-grid-areas-2;
+}
+
+.my-grid-areas-3 {
+  grid-area: my-grid-areas-3;
+}
+
+.my-grid-areas-4 {
+  grid-area: my-grid-areas-4;
+}

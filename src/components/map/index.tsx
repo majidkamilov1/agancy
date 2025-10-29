@@ -3,21 +3,30 @@ import React from "react";
 
 const Map = () => {
   return (
-    <section className="py-[120px] overflow-hidden h-[690px] ">
+    <section className="py-[120px] max-[769px]:pb-[0] overflow-x-hidden overflow-y-visible   ">
       <div className="my-container flex flex-col items-center">
-        <div className="text-center">
-          <h2 className="font-(family-name:--font-family) text-[44px] uppercase leading-[113%] ">
+        <div className="text-center max-[769px]:-mb-10">
+          <h2 className="font-(family-name:--font-family) text-[44px] max-[769px]:text-[28px] max-[769px]:text-start uppercase leading-[113%] ">
             <span className="text-[#0e7c88] text-min">Наши клиенты</span> <br />
             <span className="text-extrabold text-[#2a2a3c]">ПО ВСЕМУ МИРУ</span>
           </h2>
-          <p className="pt-3">
-            Мы гордимся работой с компаниями, которые <br /> задает правила игры
+          <p className="pt-3 max-[769px]:text-start">
+            Мы гордимся работой с компаниями, которые <br className="max-[769px]:hidden" /> задает правила игры
             на своих рынках
           </p>
         </div>
-        <div className="text-start relative">
-          <img className="max-[1440px]:scale-110 max-[1024px]:scale-125 translate-y-[60px] max-[769px]:scale-[1.75] object-cover " src="img/map.png" alt="" />
-          <div className="flex gap-20 justify-center absolute items-center bottom-0 left-[50%] translate-x-[-50%] max-[769px]:flex-col max-[769px]:gap-[34px]">
+        <div className="text-start relative max-[769px]:w-full">
+          <img
+            className="max-[1440px]:scale-110 max-[1024px]:scale-125 translate-y-[60px]  object-cover max-[769px]:hidden"
+            src="img/map.png"
+            alt=""
+          />
+          <img
+            className="w-full max-[769px]:block hidden"
+            src="img/map-2.png"
+            alt=""
+          />
+          <div className="flex gap-20 max-[769px]:-mt-50 max-[500px]:!-mt-20 justify-center absolute items-center bottom-0 left-[50%] translate-x-[-50%] max-[769px]:flex-col max-[769px]:gap-[34px] max-[769px]:static max-[769px]:items-center max-[769px]:translate-x-0">
             <div className="relative">
               <span className="font-(family-name:--font-family) text-[91px] tracking-[-0.012em] text-[#0e7c88] leading-[99%] text-extrabold">
                 250
